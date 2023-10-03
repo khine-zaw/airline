@@ -1,0 +1,251 @@
+﻿body {
+    margin:0;
+    padding:0;
+    background-image:url("bg.jpg");
+    
+}
+
+.about-img{
+    width:100%;
+    height:115px;
+}
+.glass .grid{
+    position:absolute;
+    top:70%;
+    z-index:9999;
+    left:5%;
+}
+.passbox{
+    position:relative;
+  
+    height:auto;
+
+
+}
+
+input[type="text"]{
+    outline:none;
+    border:none;
+    width:230px;
+    height:35px;
+    border-bottom:1px solid grey;
+
+}
+input[type="email"]{
+    outline:none;
+    border:none;
+    width:230px;
+    height:35px;
+    border-bottom:1px solid grey;
+
+}
+input[type="Date"]{
+    outline:none;
+    border:none;
+    width:230px;
+    height:35px;
+    border-bottom:1px solid grey;
+
+}
+.phone{
+    outline:none;
+    border:none;
+    width:230px;
+    height:35px;
+    border-bottom:1px solid grey;
+
+}
+
+.view{
+    position:absolute;
+    top:88%;
+    left:10%;
+    z-index:9999;
+    background:silver;
+    color:black;
+    padding:20px;
+
+}
+.passbox .pass{
+    position:absolute;
+    
+     top:20%;
+     left:35%;
+    z-index:9999;
+    
+    background: rgba( 255, 255, 255, 0.45 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 13px );
+-webkit-backdrop-filter: blur( 13px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+        padding:30px;
+         
+    }
+
+.passbox .pass td{
+    padding:10px;
+}
+
+.navbar-nav a{
+  margin-left:30px;
+}
+ul li{
+    list-style-type:none;
+}
+.arrow{
+    margin-left:30px;
+
+}
+.navbar{
+    /*background:#87CEEB;*/
+     position:absolute;
+    z-index:9999;
+    width:98%;
+    background: rgba( 210, 195, 195, 0.2 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+   
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-bottom:1px solid white;
+
+
+}
+.navbar-nav .nav-link{
+   padding:10px !important;
+
+}
+.navbar-nav .nav-link{
+    color:white !important;
+   
+   
+   
+}
+
+.glass{
+  
+
+position:relative;
+overflow-y:auto;
+
+
+}
+
+.carousel-inner{
+     width:100%;
+    height:900px;
+
+    
+}
+.carousel-item img{
+    width:100% !important;
+    height:900px;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.row.f-row{
+    width:95%;
+    z-index:9999;
+    position:absolute;
+    top:45%;
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    color:darkblue;
+
+}
+.row.s-row{
+   
+     width:95%;
+     z-index:9999;
+   position:absolute;
+   top:55%;
+     background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.combo{
+    outline:none;
+    border-radius:10px;
+  
+    
+}
+.logona{
+   font-size:40px;
+}
+
+.imglogo .logo{
+    width:90px;
+    height:90px;
+    position:relative;
+}
+
+.logotext{
+    font-family:fantacy;
+    font-weight:bold;
+    color:white;
+    font-style:red serifs;
+    display:inline;
+   
+    position:absolute;
+    top:45%;
+    left:6%;
+    border:none;
+    border-top:5px solid white;
+    border-bottom:5px solid white;
+   border-top-right-radius:20px;
+   border-bottom-right-radius:20px;
+   border-right:3px solid white;
+   padding-right:20px;
+    padding-left:25px;
+
+    
+}
+
+
+h4 .change{
+    color:darkblue;
+}
+input[type=text]{
+    outline:none;
+}
+
+/* Registeer Page CSS*/
+.tab{
+    
+ 
+}
+
+.promo{
+    margin-left:480px;
+}
+
+.glass .trip{ 
+    position:absolute;
+    top:21%;
+    left:30%;
+    z-index:9999;
+   background: rgba( 245, 221, 221, 0.3 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 3.5px );
+-webkit-backdrop-filter: blur( 3.5px );
+border-radius: 10px;
+
+    
+
+}
+
+
+.pass .tab .view{
+    z-index:9999 !important;
+}

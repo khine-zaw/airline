@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="AirlineManagement.Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="adminstyle.css" />
+    <link rel="stylesheet" href="js/jquery.min.js" />
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="container-scroller">
+
+
+            <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row ">
+                <div class="navbar-brand-wrapper d-flex justify-content-center">
+                    <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100 ">
+                        <img src="images/fly.jpg" alt="logo" />
+                        <a class="navbar-brand brand-logo" href="">UCSS FLIGHT</a>
+                        <a class="navbar-brand brand-logo-mini" href="">
+                            <img src="images/fly.jpg" alt="logo" /></a>
+
+                    </div>
+                </div>
+                <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+                    <ul class="navbar-nav mr-lg-4 w-100">
+                        <li class="nav-item nav-search d-none d-lg-block w-100">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="search">
+                                        <i class="mdi mdi-magnify"></i>
+                                    </span>
+                                </div>
+                                <input type="search" class="form-control " placeholder="Search now" aria-label="search" aria-describedby="search">
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav navbar-nav-right">
+
+                        <li class="nav-item nav-profile dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" id="profileDropdown">
+                                <img src="images/fly.jpg" alt="profile" />
+                                <span class="nav-profile-name">Admin</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="profileDropdown">
+
+                                <a class="dropdown-item" href="Adminlogin.aspx">
+                                    <i class="mdi mdi-logout text-primary"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+                        <span class="mdi mdi-menu"></span>
+                    </button>
+                </div>
+            </nav>
+
+            <div class="container-fluid page-body-wrapper">
+
+                <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">
+                                <i class="mdi mdi-home menu-icon"></i>
+                                <span class="menu-title">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Flightpath.aspx">
+                                <i class="mdi mdi-circle-outline menu-icon"></i>
+                                <span class="menu-title">Path</span>
+
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Flight.aspx">
+                                <i class="mdi mdi-view-headline menu-icon"></i>
+                                <span class="menu-title">Flight</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home.aspx">
+                                <i class="mdi mdi-home menu-icon"></i>
+                                <span class="menu-title">UserSite</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+    </form>
+   
+</body>
+</html>

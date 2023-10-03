@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69E74FFC-80CD-4114-BDD0-0E9CC86309E5}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AirlineManagement</RootNamespace>
+    <AssemblyName>AirlineManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="itextsharp">
+      <HintPath>C:\Users\admin\Downloads\itextsharp\itextsharp\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="AdminControl.aspx" />
+    <Content Include="Admindashboard.aspx" />
+    <Content Include="Adminlogin.aspx" />
+    <Content Include="adminstyle.css" />
+    <Content Include="App_Data\AirLine.mdf" />
+    <Content Include="App_Data\AirLine_log.ldf">
+      <DependentUpon>AirLine.mdf</DependentUpon>
+    </Content>
+    <Content Include="css\bootstrap-grid.css" />
+    <Content Include="css\bootstrap-grid.min.css" />
+    <Content Include="css\bootstrap-reboot.css" />
+    <Content Include="css\bootstrap-reboot.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="Findbooking.aspx" />
+    <Content Include="Flight.aspx" />
+    <Content Include="Flightpath.aspx" />
+    <Content Include="fontawesome\css\all.css" />
+    <Content Include="fontawesome\css\all.min.css" />
+    <Content Include="fontawesome\css\brands.css" />
+    <Content Include="fontawesome\css\brands.min.css" />
+    <Content Include="fontawesome\css\fontawesome.css" />
+    <Content Include="fontawesome\css\fontawesome.min.css" />
+    <Content Include="fontawesome\css\regular.css" />
+    <Content Include="fontawesome\css\regular.min.css" />
+    <Content Include="fontawesome\css\solid.css" />
+    <Content Include="fontawesome\css\solid.min.css" />
+    <Content Include="fontawesome\css\svg-with-js.css" />
+    <Content Include="fontawesome\css\svg-with-js.min.css" />
+    <Content Include="fontawesome\css\v4-shims.css" />
+    <Content Include="fontawesome\css\v4-shims.min.css" />
+    <Content Include="fontawesome\js\all.js" />
+    <Content Include="fontawesome\js\all.min.js" />
+    <Content Include="fontawesome\js\brands.js" />
+    <Content Include="fontawesome\js\brands.min.js" />
+    <Content Include="fontawesome\js\conflict-detection.js" />
+    <Content Include="fontawesome\js\conflict-detection.min.js" />
+    <Content Include="fontawesome\js\fontawesome.js" />
+    <Content Include="fontawesome\js\fontawesome.min.js" />
+    <Content Include="fontawesome\js\regular.js" />
+    <Content Include="fontawesome\js\regular.min.js" />
+    <Content Include="fontawesome\js\solid.js" />
+    <Content Include="fontawesome\js\solid.min.js" />
+    <Content Include="fontawesome\js\v4-shims.js" />
+    <Content Include="fontawesome\js\v4-shims.min.js" />
+    <Content Include="fontawesome\webfonts\fa-brands-400.svg" />
+    <Content Include="fontawesome\webfonts\fa-regular-400.svg" />
+    <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="footer.css" />
+    <Content Include="Home.Master" />
+    <Content Include="css\bootstrap-grid.css.map" />
+    <Content Include="css\bootstrap-grid.min.css.map" />
+    <Content Include="css\bootstrap-reboot.css.map" />
+    <Content Include="css\bootstrap-reboot.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <Content Include="css\bootstrap.min.css.map" />
+    <Content Include="images\aboutimg.jpg" />
+    <Content Include="images\air.jpg" />
+    <Content Include="images\arrow-down-left.svg" />
+    <Content Include="images\arrow-up-right.svg" />
+    <Content Include="images\cal.png" />
+    <Content Include="images\calendar.svg" />
+    <Content Include="images\f3.jpg" />
+    <Content Include="images\f5.jpg" />
+    <Content Include="images\flightp.jpg" />
+    <Content Include="images\fly.jpg" />
+    <Content Include="images\gg.jpg" />
+    <Content Include="images\info.svg" />
+    <Content Include="images\key.png" />
+    <Content Include="images\kyauk.jpg" />
+    <Content Include="images\kzl.jpg" />
+    <Content Include="images\nat.jpg" />
+    <Content Include="images\refresh-cw.svg" />
+    <Content Include="images\search.svg" />
+    <Content Include="images\sky.jpg" />
+    <Content Include="images\three.jpg" />
+    <Content Include="images\travel.jpg" />
+    <Content Include="images\user.svg">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="images\wall.jpg" />
+    <Content Include="js\bootstrap.bundle.js.map" />
+    <Content Include="js\bootstrap.bundle.min.js.map" />
+    <Content Include="js\bootstrap.js.map" />
+    <Content Include="js\bootstrap.min.js.map" />
+    <Content Include="fontawesome\webfonts\fa-brands-400.eot" />
+    <Content Include="fontawesome\webfonts\fa-brands-400.ttf" />
+    <Content Include="fontawesome\webfonts\fa-brands-400.woff" />
+    <Content Include="fontawesome\webfonts\fa-brands-400.woff2" />
+    <Content Include="fontawesome\webfonts\fa-regular-400.eot" />
+    <Content Include="fontawesome\webfonts\fa-regular-400.ttf" />
+    <Content Include="fontawesome\webfonts\fa-regular-400.woff" />
+    <Content Include="fontawesome\webfonts\fa-regular-400.woff2" />
+    <Content Include="fontawesome\webfonts\fa-solid-900.eot" />
+    <Content Include="fontawesome\webfonts\fa-solid-900.ttf" />
+    <Content Include="fontawesome\webfonts\fa-solid-900.woff" />
+    <Content Include="fontawesome\webfonts\fa-solid-900.woff2" />
+    <Content Include="Admin.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\bootstrap.bundle.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="images\flight.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\user.png" />
+    <Content Include="PassengerRegister.aspx" />
+    <Content Include="Planatrip.aspx" />
+    <Content Include="Plantrip.aspx" />
+    <Content Include="PrintReceive.aspx" />
+    <Content Include="SearchFound.aspx" />
+    <Content Include="Style.css" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminControl.aspx.cs">
+      <DependentUpon>AdminControl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminControl.aspx.designer.cs">
+      <DependentUpon>AdminControl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admindashboard.aspx.cs">
+      <DependentUpon>Admindashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admindashboard.aspx.designer.cs">
+      <DependentUpon>Admindashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adminlogin.aspx.cs">
+      <DependentUpon>Adminlogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adminlogin.aspx.designer.cs">
+      <DependentUpon>Adminlogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Findbooking.aspx.cs">
+      <DependentUpon>Findbooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Findbooking.aspx.designer.cs">
+      <DependentUpon>Findbooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flight.aspx.cs">
+      <DependentUpon>Flight.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flight.aspx.designer.cs">
+      <DependentUpon>Flight.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Flightpath.aspx.cs">
+      <DependentUpon>Flightpath.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Flightpath.aspx.designer.cs">
+      <DependentUpon>Flightpath.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.Master.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.Master.designer.cs">
+      <DependentUpon>Home.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PassengerRegister.aspx.cs">
+      <DependentUpon>PassengerRegister.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PassengerRegister.aspx.designer.cs">
+      <DependentUpon>PassengerRegister.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Planatrip.aspx.cs">
+      <DependentUpon>Planatrip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Planatrip.aspx.designer.cs">
+      <DependentUpon>Planatrip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Plantrip.aspx.cs">
+      <DependentUpon>Plantrip.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Plantrip.aspx.designer.cs">
+      <DependentUpon>Plantrip.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PrintReceive.aspx.cs">
+      <DependentUpon>PrintReceive.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PrintReceive.aspx.designer.cs">
+      <DependentUpon>PrintReceive.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchFound.aspx.cs">
+      <DependentUpon>SearchFound.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchFound.aspx.designer.cs">
+      <DependentUpon>SearchFound.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>23392</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:23392/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
